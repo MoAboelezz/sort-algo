@@ -1,0 +1,24 @@
+ALGORITHM sorting
+PROCEDURE insertion sort(array_name : ARRAY_OF INTEGER , n:INTEGER;)
+VAR
+    i,j,key:INTEGER;
+BEGIN
+    FOR i FROM 0 TO m-1 STEP 1 step  DO
+        key=array[i];
+        j=i-1;
+    WHILE (j >= 0 && arr[j] > key) do
+        arr[j + 1] := arr[j];
+        j := j - 1;
+        arr[j + 1] := key;
+    END_WHILE
+    END_FOR
+END 
+
+PROCEDURE print array (array_name : ARRAY_OF INTEGER , n:INTEGER;)
+VAR
+    i:INTEGER;
+BEGIN
+    FOR i FROM 0 TO n-1 STEP step  DO
+         Write(arr[i],);
+    END_FOR
+END
